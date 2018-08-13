@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>Exercise2</title>
+		<style type="text/css">
+			.btn {
+				display: inline-block;
+				position: relative;
+				background: #46b769;
+				padding: 15px;
+				width: 165px;
+				margin: 25px 20px;
+				border-radius: 4px;
+			}
+			.btn:after {
+				content: '';
+				display: block;
+				position: absolute;
+				right: 100%;
+				top: 50%;
+				margin-top: -10px;
+				width: 0;
+				height: 0;
+				border-top: 10px solid transparent;
+				border-right: 10px solid #3c3b3b;
+				border-bottom: 10px solid transparent;
+				border-left: 10px solid transparent;
+			}
+			
+			.check {
+				background-color: #3c3b3b;
+				width: 33px;
+				margin-top: -15px;
+				margin-left: -15px;
+				position: fixed;
+				text-align: center;
+				color: white;
+				font-size: 22px;
+				padding: 16px;
+				border-radius: 3px;
+			}
+			
+			.link-done {
+				padding: 80px;
+				font-size: 28px;
+				text-decoration: none;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="btn"><div class="check">&#10004;</div><a href="#" class="link-done">Done</a></div>
+	</body>
+</html>

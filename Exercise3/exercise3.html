@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Exercise3</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			function wordsReverser(str) {
+				var newstr = str.split(" "), result;
+				var result = "";
+
+				for(i=0;i<newstr.length;i++){
+					if(i%2 !== 0){            
+						result += newstr[i].split("").reverse().join("");
+						result += ' '; 
+					} else {              
+						result += newstr[i];
+						result += ' ';
+					}
+				}
+				$(".output").text(result);
+			}
+			
+			
+			
+			
+		</script>
+	</head>
+	<body>
+		<input type="text" style="width:250px; margin-right:5px" id="myInput"><input type="button" id="reverse-btn" value="Reverse" onclick="wordsReverser(document.getElementById('myInput').value)"/>
+		<br/><br/>
+		<span>Output: <p class="output" style="font-size:14;font-weight:bold;"/></span>
+	</body>
+</html>
